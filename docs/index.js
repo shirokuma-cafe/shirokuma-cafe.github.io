@@ -1,13 +1,19 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav_link');
+const projects = document.querySelectorAll('.project');
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
+window.addEventListener('scroll', checkBoxes);
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
+function checkBoxes() {
+  const triggerBottom = window.innerHeight / 5 * 4;
 
+  projects.forEach(project => {
+    const projectTop = project.getBoundingClientRect().top;
+
+    if(projectTop < triggerBottom){
+      project.classList.add('show');
+    }
+    else {
+      project.classList.remove('show');
+    }
+    
+  })
+}

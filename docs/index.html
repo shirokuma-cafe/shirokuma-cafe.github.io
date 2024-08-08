@@ -1,116 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Savannah Chhann</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Krub:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
     </head>
 
     <body>
         <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
-                    <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                    <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
-                </ul>
-            </nav>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+            </ul>
         </header>
         
         <!-- Introduction -->
         <section class="intro" id="home">
-            <h1 class="section_title_intro">
-                Hi, I am <strong>Savannah Chhann</strong>
-            </h1>
-            <p class="section_subtitle_intro">Computer Science Student</p>
-            <!-- <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling"> -->
+            <h1 class="section_title_intro">Savannah Chhann</h1>
+            <p class="section_subtitle_intro">Aspriring SWE</p>
         </section>
         
         <!-- About me -->
         <section class="about-me" id="about">
-            <h2 class="section_title_about">About Me</h2>
-            <p class="section_subtitle_about">Background</p>
-            
+            <h2 class="section_title_about">About</h2>
             <div class="about-me_body">
-                <p>I am currently a student from Queens, New York attending CUNY Queens College pursuing a Bachelor of Science in Computer Science. My interests within the field include web development (full-stack developer), software engineering, and game development.</p>
-                <p class="section_subtitle_about">Queens College, City University of New York (CUNY)</p>
-                <ul class="education">
-                    <li>Bachelor of Science in Computer Science | GPA: 3.8</li>
-                    <li>Relevant Courses: 
-                        Java, C++, Data Structures, Analysis of Algorithms, Database Systems, Software Engineering</li>
-                </ul>
+                <div class="background">
+                    <h3 class="section_subtitle_about">Background</h3>
+                    <p> I'm Savannah Chhann, a recent graduate from CUNY Queens College with a Bachelor of Science in Computer Science. </p>
+                    <p> Growing up, I've played a lot of video games and wanting a better understanding of how these games come to life
+                        got me into the world of tech. As I got more into programming, I wanted to create something of my own that would
+                        have a positive effect on others. That sparked my interests in <strong>software development, web development, frontend 
+                        development and game development.</strong> </p>
+                </div>
+                <h3 class="section_subtitle_about">Education</h3>
+                <div class="education">
+                    <img src="logo/qc.webp" alt="qc">
+                    <ul>
+                        <li id="name">Queens College, City University of New York (CUNY)</li>
+                        <li id="date">Fall 2020 - Spring 2024</li>
+                        <li>Bachelor of Science in Computer Science (GPA 3.77/4.0)</li>
+                        <li>Relevant Courses: 
+                            Design & Analysis Algorithms, Internet and Web Technologies, Software Engineering,
+                            Computer Vision, Operating Systems, Numerical Methods, Post-Quantum Cryptography</li>
+                    </ul>
+                </div>
+                <h3 class="section_subtitle_about">Experience</h3>
+                <div class="experience">
+                    <img src="logo/ctp.png" alt="ctp">
+                    <ul>
+                        <li id="name">CUNY Tech Prep</li>
+                        <li id="date">July 2023 - May 2024</li>
+                        <li>Selected for a competitive web development fellowship with students from across the 11 CUNY senior
+                            colleges where Fellows create technical projects using tools such as React, Node + Express, and PostgreSQL</li>
+                        <li>Participate in weekly courses and learn industry best practices for design, implementation, and deployment
+                            such as MVC, version control with Git/GitHub, agile & Scrum with Trello and Slack, test-driven development, and CI/CD</li>
+                    </ul>
+                </div>
             </div>
-            <!-- <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus"> -->
         </section>
 
         <!-- My Skills -->
         <section class="my-skills" id="skills">
             <h2 class="section_title_skills">Skills</h2>
             <div class="skills">
-                <div class="skill">
-                    <h3>Languages</h3>
-                    <p>Java, C++, Kotlin, HTML, CSS, JavaScript, MySQL, Python</p>
-                </div> <!-- / skill -->
+                <h3>Languages</h3>
+                <div class="skill languages">
+                    <ul>
+                        <li><img src="logo/java.svg" alt="java"></li>
+                        <li><img src="logo/cpp.svg" alt="cpp"></li>
+                        <li><img src="logo/html5.svg" alt="html5"></li>
+                        <li><img src="logo/css3.svg" alt="css3"></li>
+                        <li><img src="logo/javascript.svg" alt="javascript"></li>
+                        <li><img src="logo/react.svg" alt="react"></li>
+                        <li><img src="logo/python.svg" alt="python"></li>
+                        <li><img src="logo/mysql.svg" alt="mysql"></li>
+                        <li><img src="logo/kotlin.svg" alt="kotlin"></li>
+                    </ul>
+
+                </div> 
                 
-                <div class="skill">
-                    <h3>Technologies</h3>
-                    <p>Git/GitHub, VS Code, Android Studio</p>
-                </div> <!-- / skill -->
+                <h3>Technologies</h3>
+                <div class="skill technologies">
+                    <ul>
+                        <li><img src="logo/git.svg" alt="git"></li>
+                        <li><img src="logo/github.svg" alt="github"></li>
+                        <li><img src="logo/vscode.svg" alt="vscode"></li>
+                        <li><img src="logo/figma.svg" alt="figma"></li>
+                        <li><img src="logo/androidstudio.svg" alt="androidstudio"></li>
+                    </ul>
+                </div> 
                 
-                <div class="skill">
-                    <h3>Certifications</h3>
+                <h3>Certifications</h3>
+                <div class="skill certifications">
+                    <img src="logo//codepath.png" alt="codepath">
                     <p>CodePath’s Intermediate Android Development</p>
-                </div> <!-- / skill -->
-            </div> <!-- / skills -->
-            <!-- <a href="#work" class="btn">My Work</a> -->
+                </div> 
+            </div> 
         </section>
         
         
         <!-- My Projects -->
         <section class="my-projects" id="projects">
             <h2 class="section_title_projects">Projects</h2> 
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="https://github.com/android102-spring23-group4/OwnCheff" class="portfolio_item">
-                    <img src="img/owncheff.png" alt="OwnCheff" class="portfolio_img">
-                </a>
-
-                <!-- Portfolio item 02 -->
-                <a href="https://github.com/shirokuma-cafe/BitFitPart2" class="portfolio_item">
-                    <img src="img/BitFit.png" alt="" class="portfolio_img">
-                </a>   
-                
-                <!-- Portfolio item 03 -->
-                <a href="https://github.com/shirokuma-cafe/GunnyBunny/tree/main" class="portfolio_item">
-                    <img src="img/GunnyBunny.png" alt="Gunny Bunny" class="portfolio_img" id="gb">
-                </a>
+            <div class="project project1">
+                <h2><a href="https://github.com/shirokuma-cafe/ping-pong-online" target="_blank">Ping Pong Online</a></h2>
+                <div class="project-content">
+                    <img src="img/pingpong.png" alt="Ping Pong Online">
+                    <div class="info">
+                        <p> An interactive multiplayer ping pong web game. Users can play against a CPU of various difficulties
+                            or enter a lobby and play with another person online. A year-long project created as part of CUNY Tech Prep's 
+                            full stack web development track in a group of three.</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>Socket.io</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project project2">
+                <h2><a href="https://github.com/shirokuma-cafe/Ba-Nanos" target="_blank">Ba-Nanos Art Generator</a></h2>
+                <div class="project-content">
+                    <img src="img/bananos.png" alt="Ba-Nanos Art Generator">
+                    <div class="info">
+                        <p> A web application capable of transforming user-provided images into customized stylized versions based 
+                            on user-selected artistic styles. As part of The Arts & Tech: CUNY Tech Prep Cohort 9 Hackathon
+                            done within a couple of days in a group of four.</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project project3">
+                <h2><a href="https://github.com/android102-spring23-group4/OwnCheff" target="_blank">OwnCheff</a></h2>
+                <div class="project-content">
+                    <img src="img/owncheff.png" alt="OwnCheff">
+                    <div class="info">
+                        <p> An Android application offering users daily access to unique recipes. Users can log into 
+                            their account via Google sign-in. As part of CodePath’s Intermediate Android Development
+                            course in a group of five.</p>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Android Studio</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         
         <!-- Footer -->
         <footer class="footer">
-            <a href="mailto:schhann327@gmail.com" class="footer_link">schhann327@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list_item">
-                    <a class="social-list_link" href="https://www.linkedin.com/in/savannah-chhann-5aa679252">
+                    <a class="social-list_link" href="https://www.linkedin.com/in/savannah-chhann" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list_item">
-                    <a class="social-list_link" href="https://github.com/shirokuma-cafe">
-                        <i class="fab fa-github"></i>
+                    <a class="social-list_link" href="https://github.com/shirokuma-cafe" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list_item">
+                    <a class="social-list_link" href="mailto:schhann327@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </li>
             </ul>
