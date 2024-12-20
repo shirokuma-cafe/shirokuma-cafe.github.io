@@ -28,6 +28,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 4rem;
+    overflow-x: hidden;
 }
 
 body {
@@ -124,7 +125,7 @@ header {
     display: block;
 }
 
-.section_subtitle_about{
+.section_subtitle_about {
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
 }
@@ -137,19 +138,19 @@ header {
     background-color: var(--clr-light);
 }
 
-.background, .education, .experience {
+.background, .education, .experience, .exp {
     padding: 1rem;
 }
 
-.education, .experience {
+.education, .exp {
     display: flex;
 }
 
-.education ul, .experience ul {
+.education ul, .exp ul {
     margin: 0;
 }
 
-.education img, .experience img {
+.education img, .exp img {
     width: 250px;
     height: fit-content;
 }
@@ -274,7 +275,7 @@ header {
 .project {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    width: 1000px;
+    width: 90vw;
     height: 500px;
     margin: 10px;
     padding: 20px;
@@ -284,14 +285,15 @@ header {
     transition: transform 0.7s ease;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .project {
-        width: 500px;
+        width: 70vw;
         height: fit-content;
     }
     .project-content {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 
