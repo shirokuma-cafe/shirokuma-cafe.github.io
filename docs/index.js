@@ -17,3 +17,14 @@ function checkBoxes() {
     
   })
 }
+
+const button = document.querySelector('.button');
+
+button.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  const newTheme = document.body.classList.contains('dark-theme') ? 'dark-theme' : '';
+  button.innerHTML = newTheme === 'dark-theme' ? '<i class="fa-regular fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  const githubLI = document.querySelector('#github');
+  githubLI.innerHTML = newTheme === 'dark-theme' ? '<img src="logo/github-white.svg" alt="github"></img>' : '<img src="logo/github.svg" alt="github"></img>';
+});
+

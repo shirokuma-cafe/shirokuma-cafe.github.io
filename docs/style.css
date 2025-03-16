@@ -11,8 +11,8 @@
     --fw-reg: 300;
     --fw-bold: 700;
     
-    --clr-light: #eeeeee;
-    --clr-dark: #404040;
+    --bg-color: #eeeeee;
+    --text-color: #000000;
     --clr-accent: #2b9f4c;
 
     --fs-h1: 5rem;
@@ -21,6 +21,11 @@
     --fs-body: 1.5rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
+}
+
+.dark-theme {
+    --bg-color: #000000;;
+    --text-color: #eeeeee;
 }
 
 /* General styles */
@@ -33,14 +38,34 @@ html {
 
 body {
     position: relative;
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--bg-color);
+    color: var(--text-color);
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
     margin: 0;
     width: 100%;
     overflow-x: hidden;
+}
+
+.button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3vw;
+    bottom: 2vw;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: .5;
 }
 
 section {
@@ -106,7 +131,7 @@ header {
 }
 
 .nav_link:hover {
-    color: var(--clr-light);
+    color: var(--bg-color);
 }
 
 @media (max-width: 431px) {
@@ -153,7 +178,7 @@ header {
 .about-me {
     max-width: 1250px;
     margin: 0 auto 0;
-    background-color: var(--clr-light);
+    background-color: var(--bg-color);
 }
 
 .background, .education, .experience, .exp {
@@ -217,7 +242,7 @@ header {
 .my-skills {
     max-width: 1250px;
     margin: 0 auto 0;
-    background-color: var(--clr-light);
+    background-color: var(--bg-color);
     color: var(--clr-dark);
     text-align: center;
 }
@@ -292,13 +317,10 @@ header {
     display: flex;
 }
 
-
 .certifications img {
     width: 150px;
     height: 150px;
 }
-
-
 
 /* My Projects */
 
@@ -309,7 +331,7 @@ header {
     justify-content: center;
     max-width: 1250px;
     margin: auto;
-    background-color: var(--clr-light);
+    background-color: var(--bg-color);
     color: var(--clr-accent);
     text-align: center;    
 }
@@ -325,8 +347,8 @@ header {
 }
 
 .project {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-accent);
+    color: var(--text-color);
     width: 90vw;
     height: 500px;
     margin: 10px;
@@ -343,11 +365,11 @@ header {
 
 .project h2 a {
     text-decoration: none;
-    color: var(--clr-light);
+    color: var(--text-color);
 }
 
 .project h2 a:hover {
-    color: var(--clr-accent);
+    color: var(--bg-color);
 }
 
 .project-content {
@@ -375,8 +397,8 @@ header {
 
 .info ul li {
     padding: .25rem;
-    color: var(--clr-dark);
-    background-color: var(--clr-light);
+    color: var(--);
+    background-color: var(--bg-color);
     border: 3px solid var(--clr-accent);
     border-radius: 15px;
     margin-right: .75rem;
@@ -419,7 +441,7 @@ header {
         width: 90vw;
     }
     .info ul li {
-        margin-right: .35rem;
+        margin-right: .25rem;
         font-size: 1rem;
     }
 }
@@ -430,14 +452,14 @@ header {
     position: absolute;
     width: 100%;
     margin: 8rem 0;
-    background: var(--clr-dark);
-    color: var(--clr-accent);
+    background: var(--clr-accent);
+    color: var(--text-color);
     text-align: center;
     font-size: var(--fs-h3);
 }
 
 .footer a { 
-    color: var(--clr-accent);
+    color: var(--text-color);
    
 }
 
