@@ -54,7 +54,6 @@ img {
     max-width: 100%;
 }
 
-
 /* Typography */
 
 h1,
@@ -70,6 +69,15 @@ h1 {
 }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
+@media (max-width: 431px) {
+    h1 { 
+        font-size: var(--fs-h2); 
+        color: var(--clr-dark);
+    }
+    h2 { font-size: var(--fs-h3) }
+    h3 { font-size: var(--fs-body) }
+}
 
 /* Header */
 
@@ -99,6 +107,16 @@ header {
 
 .nav_link:hover {
     color: var(--clr-light);
+}
+
+@media (max-width: 431px) {
+    .nav_link {
+        font-size: var(--fs-body);
+        margin: .5rem;
+    }
+    .nav_list {
+        margin: 1rem 0 0 0;
+    }
 }
 
 /* Intro */
@@ -174,6 +192,16 @@ header {
     opacity: 0.25;
 }
 
+@media (max-width: 431px) {
+    .education, .exp {
+        display: flex;
+        flex-direction: column;
+    }
+    .education ul, .exp ul {
+        padding: 0;
+    }
+}
+
 #name {
     list-style: none;
     font-weight: var(--fw-bold);
@@ -231,7 +259,31 @@ header {
     margin-right: 2rem;
 }
 
-.languages img, .technologies img{
+@media (max-width: 431px) {
+    .skill ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 200px; 
+        max-width: 100px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 391px) {
+    .skill ul {
+        max-height: 200px; 
+        max-width: 85px;
+    }
+}
+
+@media (max-width: 321px) {
+    .languages ul {
+        margin-left: -1rem;
+    }
+}
+
+.languages img, .technologies img {
     width: 80px;
     height: 80px;
 }
@@ -285,18 +337,6 @@ header {
     transition: transform 0.7s ease;
 }
 
-@media (max-width: 1100px) {
-    .project {
-        width: 70vw;
-        height: fit-content;
-    }
-    .project-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .project h2 {
     margin-top: 1rem;
 }
@@ -348,6 +388,40 @@ header {
 
 .project.show {
     transform: translateX(0);
+}
+
+@media (max-width: 1100px) {
+    .project {
+        width: 70vw;
+        height: fit-content;
+    }
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 431px) {
+    .project {
+        width: 95vw;
+        height: fit-content;
+    }
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-content img {
+        margin: 0;
+    }
+    .info {
+        width: 90vw;
+    }
+    .info ul li {
+        margin-right: .35rem;
+        font-size: 1rem;
+    }
 }
 
 /* footer */
